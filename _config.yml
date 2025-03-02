@@ -1,3 +1,10 @@
 title: "Welcome to SEO blog"
 description: "A blog built for SEO beginners"
 remote_theme: pages-themes/minimal@v0.2.0
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Enable GitHub Pages compatible build
+github: [metadata]
