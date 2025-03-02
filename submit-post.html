@@ -1,83 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="/css/styles.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Submit a post</title>
-  <link rel="stylesheet" href="/css/style.css">
   <style>
-    /* Additional Styles */
+    /* Additional styles for Google Form */
     .form-container {
       max-width: 800px;
       margin: 20px auto;
       padding: 20px;
     }
-
-    iframe {
+    
+    .google-form {
       width: 100%;
-      min-height: 1100px;
+      height: 1300px; /* Adjust based on your form's height */
       border: none;
-    }
-
-    .header-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    .top-nav {
-      display: flex;
-      gap: 20px;
-    }
-
-    .top-nav a {
-      color: white;
-      text-decoration: none;
-      padding: 8px 16px;
-      border-radius: 4px;
-      transition: background 0.3s;
-    }
-
-    .top-nav a:hover {
-      background: rgba(255,255,255,0.1);
-    }
-
-    @media (max-width: 768px) {
-      .header-content {
-        flex-direction: column;
-        text-align: center;
-      }
-      
-      .top-nav {
-        margin-top: 15px;
-        flex-direction: column;
-        gap: 10px;
-      }
+      overflow: hidden;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="header-content">
-      <h1>Submit a Post</h1>
-      <nav class="top-nav">
-        <a href="/blogseo">Home</a>
-        <a href="/blogseo/posts.html">Posts</a>
-        <a href="/blogseo/submit-post.html">Submit a Post</a>
-      </nav>
-    </div>
+    <h1>Submit a Post</h1>
   </header>
   
-  <div class="form-container">
-    <h2>Submit Your Post</h2>
-    <iframe 
-      src="https://docs.google.com/forms/d/e/1FAIpQLSfqUQoWyeGvlGoOKhiGC_DPicyDvuXHOzn7pCNllDg6rpDSDQ/viewform?embedded=true"
-      loading="lazy">
-      Loading…
-    </iframe>
+  <div class="container">
+    <div class="content">
+      <h2>Submit Your Post</h2>
+      <div class="form-container">
+        <iframe 
+          class="google-form"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfqUQoWyeGvlGoOKhiGC_DPicyDvuXHOzn7pCNllDg6rpDSDQ/viewform?embedded=true"
+          loading="lazy">
+          Loading…
+        </iframe>
+      </div>
+    </div>
+    
+    <nav class="sidebar">
+      <ul>
+        <li><a href="/blogseo">Home</a></li>
+        <li><a href="/blogseo/posts.html">Posts</a></li>
+        <li><a href="/blogseo/submit-post.html">Submit a Post</a></li>
+      </ul>
+    </nav>
   </div>
 
   <footer>
