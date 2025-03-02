@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/submit.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Submit a post</title>
-  <style>
-    /* Additional styles for Google Form */
-    .form-container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-    }
-    
-    .google-form {
-      width: 100%;
-      height: 1300px; /* Adjust based on your form's height */
-      border: none;
-      overflow: hidden;
-    }
-  </style>
-</head>
+  <title>Submit a Post</title>
+ </head>
 <body>
   <header>
-    <h1>Submit a Post</h1>
+    <h1>Submit a Guest Post</h1>
   </header>
-  
-  <div class="container">
-    <div class="content">
-      <h2>Submit Your Post</h2>
-      <div class="form-container">
-        <iframe 
-          class="google-form"
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfqUQoWyeGvlGoOKhiGC_DPicyDvuXHOzn7pCNllDg6rpDSDQ/viewform?embedded=true"
-          loading="lazy">
-          Loading…
-        </iframe>
-      </div>
+
+  <div class="three-column-grid">
+    <!-- Column 1: Google Form -->
+    <div class="google-form-container">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfqUQoWyeGvlGoOKhiGC_DPicyDvuXHOzn7pCNllDg6rpDSDQ/viewform?embedded=true" 
+              loading="lazy">
+        Loading…
+      </iframe>
     </div>
-    
-    <nav class="sidebar">
+
+    <!-- Column 2: Text Content -->
+    <div class="content-block">
+      <h2>Submit Your Article</h2>
+      <p>Enhance your website's authority and search engine ranking by contributing high-quality guest posts to our platform. By sharing your expertise through well-crafted articles, you can secure valuable backlinks from a high Domain Authority (DA) site, boosting your online presence and credibility.</p>
+
+      <h3>Why Guest Post with Us?</h3>
       <ul>
-        <li><a href="/blogseo">Home</a></li>
-        <li><a href="/blogseo/posts.html">Posts</a></li>
-        <li><a href="/blogseo/submit-post.html">Submit a Post</a></li>
+        <li><strong>High DA Backlinks:</strong> Our platform offers authoritative backlinks that can significantly improve your site's SEO performance.</li>
+        <li><strong>Targeted Audience Reach:</strong> Share your insights with a niche-specific audience, driving relevant traffic to your website.</li>
+        <li><strong>Enhanced Online Visibility:</strong> Publishing with us increases your brand's exposure and establishes you as an industry thought leader.</li>
+      </ul>
+
+      <h3>Submission Guidelines:</h3>
+      <ul>
+        <li><strong>Original Content:</strong> Ensure your article is unique, informative, and has not been published elsewhere.</li>
+        <li><strong>Word Count:</strong> Aim for comprehensive coverage with articles between 1,000 to 1,500 words.</li>
+        <li><strong>Formatting:</strong> Use clear headings, subheadings, and bullet points for readability.</li>
+        <li><strong>Relevant Links:</strong> Include up to two contextual backlinks to your site, ensuring they add value to the content.</li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Navigation Menu -->
+    <nav class="side-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="posts.html">Posts</a></li>
+        <li><a href="submit-post.html">Submit Post</a></li>
+        <li><a href="guidelines.html">Guidelines</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </div>
 
   <footer>
-    <p>&copy; 2025 My Blog. All rights reserved.</p>
+    <p>&copy; 2025 SEO Blog. All rights reserved.</p>
   </footer>
 </body>
 </html>
